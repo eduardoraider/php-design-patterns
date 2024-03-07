@@ -1,0 +1,18 @@
+{
+  "name": "eduardoraider/design-patterns",
+  "description": "Explore the world of Design Patterns in PHP. This project, inspired by the Gang of Four (GoF) design patterns and Refactoring.Guru.",
+  "authors": [
+    {
+      "name": "Eduardo Raider",
+      "email": "eduraider@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Raider\\DesignPatternsPHP\\": "src/"
+    }
+  },
+  "require": {
+    "ext-readline": "*"
+  }
+}
