@@ -1,11 +1,22 @@
 # Chain of Responsibility
 
-Chain of Responsibility is behavioral design pattern that allows passing request along the chain of potential handlers until one of them handles request.
+Chain of Responsibility is a behavioral design pattern that lets you pass requests along a chain of handlers. Upon receiving a request, each handler decides either to process the request or to pass it to the next handler in the chain.
 
-The pattern allows multiple objects to handle the request without coupling sender class to the concrete classes of the receivers. The chain can be composed dynamically at runtime with any handler that follows a standard handler interface.
+The pattern allows multiple objects to handle the request without coupling sender class to the concrete classes of 
+the receivers. The chain can be composed dynamically at runtime with any handler that follows a standard handler interface.
+
+**Usage examples:** The Chain of Responsibility is pretty common in various PHP frameworks. Arguably, one of the most 
+famous examples of using this pattern in PHP is HTTP Request Middleware described in PSR-15.
+
+**Identification:** The pattern is recognizable by behavioral methods of one group of objects that indirectly call the 
+same methods in other objects, while all the objects follow the common interface.
+
+**[Learn more on Refactoring.Guru](https://refactoring.guru/design-patterns/chain-of-responsibility)**
+
+## Real World Example
 
 The most widely known use of the Chain of Responsibility (CoR) pattern in the PHP world is found in HTTP request 
-middleware. These are implemented by the most popular PHP frameworks and even got standardized as part of PSR-15. [Learn more on Refactoring.Guru](https://refactoring.guru/design-patterns/chain-of-responsibility)
+middleware. These are implemented by the most popular PHP frameworks and even got standardized as part of PSR-15.
 
 ## Getting Started
 
